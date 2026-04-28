@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bazarna Pop-Up Society</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800;900&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#00391e",
+                        "on-tertiary": "#2f3131",
+                        "secondary-container": "#fed000",
+                        "secondary-fixed-dim": "#edc200",
+                        "primary": "#7ed9a0",
+                        "primary-fixed": "#9af6ba",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-bright": "#3a3939",
+                        "inverse-on-surface": "#313030",
+                        "outline-variant": "#3f4941",
+                        "surface-container": "#201f1f",
+                        "inverse-primary": "#006d3f",
+                        "tertiary": "#c6c6c7",
+                        "outline": "#889489",
+                        "on-secondary-container": "#6f5900",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#95f0b5",
+                        "tertiary-container": "#606161",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "surface": "#131313",
+                        "primary-container": "#007041",
+                        "on-tertiary-container": "#dcdddd",
+                        "on-secondary": "#3c2f00",
+                        "secondary": "#fff0c9",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary-fixed": "#ffe07f",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-surface-variant": "#bec9be",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "background": "#131313",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#7ed9a0",
+                        "on-primary-fixed-variant": "#00522e",
+                        "on-secondary-fixed": "#231b00",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-tint": "#7ed9a0",
+                        "on-background": "#e5e2e1",
+                        "on-primary-fixed": "#00210f",
+                        "surface-dim": "#131313",
+                        "on-secondary-fixed-variant": "#564500",
+                        "surface-variant": "#353534",
+                        "surface-container-highest": "#353534",
+                        "error-container": "#93000a",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-error": "#690005",
+                        "tertiary-fixed-dim": "#c6c6c7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "section-gap": "120px",
+                        "unit": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Epilogue"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Epilogue"],
+                        "headline-md": ["Epilogue"],
+                        "body-sm": ["Inter"],
+                        "label-caps": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["80px", { "lineHeight": "90%", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "160%", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "110%", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "120%", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "150%", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "100%", "letterSpacing": "0.1em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #111111; color: #e5e2e1; }
+        .clip-diagonal { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+    </style>
+</head>
+<body class="font-body-lg text-body-lg bg-background text-on-background overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-[#111111]/80 backdrop-blur-lg fixed top-0 w-full z-50 border-b border-white/10 flat no shadows relative">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-[1440px] mx-auto">
+<a class="text-2xl font-black tracking-tighter text-white" href="../home_bazarna_pop_up_society/code.html">BAZARNA</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white hover:bg-yellow-400 hover:text-black transition-colors duration-200 cursor-pointer active:scale-95 px-3 py-1" href="../events_brands_bazarna/code.html">Events</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white hover:bg-yellow-400 hover:text-black transition-colors duration-200 cursor-pointer active:scale-95 px-3 py-1" href="../marketplace_bazarna/code.html">Marketplace</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white hover:bg-yellow-400 hover:text-black transition-colors duration-200 cursor-pointer active:scale-95 px-3 py-1" href="../media_stories_bazarna/code.html">Gallery</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white hover:bg-yellow-400 hover:text-black transition-colors duration-200 cursor-pointer active:scale-95 px-3 py-1" href="../blog_bazarna/code.html">Blog</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white hover:bg-yellow-400 hover:text-black transition-colors duration-200 cursor-pointer active:scale-95 px-3 py-1" href="../sponsors_mission_bazarna/code.html">Sponsors</a>
+</nav>
+<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-white" data-mobile-menu-button type="button">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+<div class="md:hidden hidden absolute top-full left-0 w-full bg-[#111111]/95 backdrop-blur-lg border-b border-white/10" data-mobile-menu id="mobile-menu">
+<div class="w-full max-w-[1440px] mx-auto px-8 py-4 flex flex-col gap-1">
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../events_brands_bazarna/code.html">Events</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../marketplace_bazarna/code.html">Marketplace</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../media_stories_bazarna/code.html">Gallery</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../blog_bazarna/code.html">Blog</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../sponsors_mission_bazarna/code.html">Sponsors</a>
+</div>
+</div>
+</header>
+<main class="pt-[90px]">
+<!-- Hero Section -->
+<section class="relative w-full h-[870px] overflow-hidden bg-surface-container-low clip-diagonal">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Vibrant pop-up event with neon lights, crowded market stalls, high energy atmosphere, dark and moody premium photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG-YNM-JGcjU8l-c8QJtJ_5qniFX4sMsTpV6thwafYV3bgMzOq046yM5extpCdDxLxDRi4qNYG1FyHOdADM9M3hoMtNMNzZ-lX6ExeAcTcsQWT56W4I7xh9JRCROuZ8ELyCwopHuXq1o6bTJ-5if-Pcjx-063m88gCchtVqbSkOwT4ZuySt2QWxxXUIthDaeoCkGkm0-FR0e7NTXCzax08jk5nRosmd8LrdTtmSMCRj-9HsTxofKziUO3PVprM9CEpOtVEbYyRaLpj"/>
+<div class="relative z-20 h-full max-w-[1440px] mx-auto px-margin-desktop flex flex-col justify-center">
+<div class="max-w-3xl">
+<span class="inline-block bg-primary-container text-on-primary-container px-3 py-1 font-label-caps text-label-caps mb-6 border border-primary">LIVE NOW</span>
+<h1 class="font-display-xl text-display-xl text-white mb-6 uppercase">
+                        The Ultimate <br/>
+<span class="text-secondary-container">Pop-Up</span> <br/>
+                        Society.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                        Experience the most curated marketplace events. High-end brands, immersive art, and unparalleled energy.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 font-label-caps text-label-caps uppercase hover:bg-white transition-colors">
+                            Explore Current Event
+                        </button>
+<button class="border border-white text-white px-8 py-4 font-label-caps text-label-caps uppercase hover:bg-white/10 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">play_circle</span>
+                            Watch Aftermovie
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Current & Upcoming Events Bento -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop py-section-gap">
+<div class="flex justify-between items-end mb-12 border-b border-surface-variant pb-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-white uppercase">The Calendar</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">Curated experiences you can't afford to miss.</p>
+</div>
+<button class="text-primary hover:text-white font-label-caps text-label-caps uppercase transition-colors flex items-center gap-2">
+                    View All <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-[600px]">
+<!-- Main Featured Event -->
+<div class="col-span-1 md:col-span-8 relative group overflow-hidden bg-surface-container-low cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Upscale night market scene with warm glowing lights, people mingling, high contrast premium aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy9twmtAWCxQCwf98d6dcy3MdoQAtK1pWNL-ytPepv_icTiYuR43c0gQBwapKFbqZi2hflge37BzwR-sGQHIaNJCYl8qoXAyfOyKsNan3J_wzSdHjCttvfxRDqhDuA0LTqIo3RcWUrAZC4rKFpBPSrRzLOT4AunIGV-5ZNt_LKH-9e1zO_i7diyEPddCS3uhJj83vgTXMd07-xFrKzz0AcH1s_qVEA12_Z0alGxLEooCwUjzt47XDKQa6UjqAdp6KGHKgnHev7jR76"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="flex justify-between items-end">
+<div>
+<span class="bg-secondary-container text-black px-2 py-1 font-label-caps text-label-caps mb-4 inline-block">THIS WEEKEND</span>
+<h3 class="font-headline-md text-headline-md text-white uppercase mb-2">Midnight Souq Edition III</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span> Downtown Design District
+                                </p>
+</div>
+<div class="text-right">
+<p class="font-headline-md text-headline-md text-secondary-container mb-1">Oct 24-26</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Events -->
+<div class="col-span-1 md:col-span-4 flex flex-col gap-gutter">
+<div class="flex-1 relative group overflow-hidden bg-surface-container">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" data-alt="Abstract fashion display at a pop up event, modern minimalist styling, dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQU19UjgzSGkRSb7_wWtdZdZluKcEtJn6YGu8XERhOvdKQxEAO_YjUbGbmrrOx5BUp0uSKGlP1lm1SAC-qWTusijVumY7XMko-s4DXrHUTU4IybIaQU5SEhF_19vqgaFkwt84tLXXjMbLFpYmHY7L_gOGlbcgN_hfuR-KKxLxQRzPoomxoewpw54MxqotXPt_lD63L3_ISz58S3qfOmD6INSRkb48seVDepTzY_I5kkDkhJGBeO-7liHdWBmNBKTs_J5Ok4Em6--fl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+<div class="absolute bottom-0 p-6 w-full">
+<span class="text-primary font-label-caps text-label-caps mb-2 block">UPCOMING</span>
+<h4 class="font-headline-md text-white text-2xl uppercase mb-1">Avant-Garde Showcase</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Nov 12 • The Grand Hall</p>
+</div>
+</div>
+<div class="flex-1 relative group overflow-hidden bg-surface-container">
+<div class="absolute inset-0 bg-surface-container-high p-6 flex flex-col justify-center border border-white/5">
+<span class="material-symbols-outlined text-4xl text-surface-variant mb-4">calendar_month</span>
+<h4 class="font-headline-md text-white text-xl uppercase mb-2">Winter Market Fest</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Dec 05-10 • Central Park</p>
+<button class="text-secondary-container font-label-caps text-label-caps uppercase text-left hover:text-white transition-colors">Notify Me →</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Brands Marquee / Grid -->
+<section class="bg-surface-container py-section-gap border-y border-white/5">
+<div class="max-w-[1440px] mx-auto px-margin-desktop mb-12">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase text-center">Curated Exhibitors</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-px bg-white/5 max-w-[1440px] mx-auto border border-white/5">
+<!-- Brand Slots -->
+<div class="bg-surface-container aspect-square flex items-center justify-center p-8 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<img class="w-full h-full object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Minimalist abstract logo design in white against dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNbfamfr2cY0d9Gw79mt7nYHQ60GlbKWbVbSHDXl2LhpQcMf2JdntOnnwZonlYm6zsq7nLyGT0ta2Qrz0BUZQTNPkPKpRTEnLCRSzpyEADSLSE0nxrLqcmwLIFDSFu6fmNyCWbAOzAPR8b-nsDyjYkiXKBUQ9XwWA_QJ38Q3VazvrRBjEu5ONoP0vx3EmBMJB34SzOfu9hoDN-Duss4BcX5BjU0Ecu_qQxgDNS18W9SeBPda9vTRnTLq-ekfdzzpdEat3RDh5ETYIY"/>
+</div>
+<div class="bg-surface-container aspect-square flex items-center justify-center p-8 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<img class="w-full h-full object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Sleek modern typography logo for a fashion brand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmKXgGZ_YtuSTFdL7lYw0XZy6R4OcyN7vQZzU22TctiZ_YXyEz57iF7Ph8nQYvV5MSrY9FXhiMTbZe1_r5gQB4nPY65SrLXR25Z4reQSuPE7Yi-5OdR5LJ657XKnOc6sitbwTrJW8Ycs9d_WHWHqmC2JadGSOxwv5S4XWLBfJHc6c_szQvSqkwELr6f6ZJatMLQPHL21bY9CmhslAoYccF0pNQGQyNLc3LUE0Tiqz_6D0bj7xkxAkHZSJhYeAP-F2SSLM6uqDy36eE"/>
+</div>
+<div class="bg-surface-container aspect-square flex items-center justify-center p-8 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<img class="w-full h-full object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Luxury lifestyle brand logo mark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAKqOxQy_QboE0LOtbMIWBf1XPVWhshxSXN8w_KJ9wTiWVVU87hrKuX7H6GJ9AW5oGDozN4TV53bFX1nG2sgd8awMWJcj62WGrslRA6bfHq0-1NFYuw-Ess2U3-Bub-p_MVAkgKzFkPLZqBSc8tDAM_ttGzT-s6F4wXVtT2-bFfaN9pYFio7KHZ6BSFfnY4Fq_rFDBAVKHvCLnLpDa7-m_7IzoGNRqoXvV6hmCPK7A7G3WzNibF18BL-YEj6VymuebUnrY50UDmr2E"/>
+</div>
+<div class="bg-surface-container aspect-square flex items-center justify-center p-8 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<img class="w-full h-full object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Artisan food vendor logo design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcXD17F1ZmkX2-EP4_6Lp_b4x9oKeiS2q7pihpqhl3swHUPhXWa4ScqhmMN28FRHwg5o0xvJSfVzOu0tl2XsL6ZR9b3MOAQ6dJVUuxFCsTkt3J8_qKOuPiXKtGKckr-k7LtPd0KLNvX7UgN1s2Y6xEQCePEj-c7Uj8peiymzASxoVDXdmImW0ugxu_olP-tgqRUg333XgM714onbFnjouZnqev1Vw_khfJkj041DmH2fCaxdXu_enSqH-o5uvHnrR-Vc-2BxnlGJgz"/>
+</div>
+<div class="bg-surface-container aspect-square flex items-center justify-center p-8 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<img class="w-full h-full object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Creative studio logo monogram" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkJhOVrx2nNfeE4X0yePPuy2JM2l8AQwzYDvjNAvTYdgJcwSiTH_AgTsjfIK7m5_5qQnFuyITZ49BSczUFfJHW4JFWpe7c4JlOLLgbleiLmtZJS6jGKYmZyjDsXPRdCkeofsz_Jf9wZ9TfJ8FTQV946DNo0Q84Rw6l3RZ2WPnc0OhYDfMaIexl5VEXkmaVzVq10fAlkl57ze0ABkjGZHxPc0fyvL19nGbRYPND643N1eN7nvZMwg0BYd1YVzipSIZECXVhl2uLAgLJ"/>
+</div>
+<div class="bg-surface-container aspect-square flex items-center justify-center p-8 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">add</span>
+<p class="font-label-caps text-label-caps text-white uppercase">Become a Vendor</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#111111] w-full py-12 px-8 border-t border-white/5 hairline weight horizontal lines flat grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto font-['Epilogue'] text-xs tracking-widest uppercase ease-in-out duration-300">
+<div>
+<div class="text-xl font-black text-white mb-4">BAZARNA</div>
+<p class="text-white/40">© 2024 BAZARNA SOCIETY. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex justify-end gap-8 flex-wrap items-center">
+<a class="text-white/40 hover:text-yellow-400 transition-colors" href="#">Privacy Policy</a>
+<a class="text-white/40 hover:text-yellow-400 transition-colors" href="#">Terms of Service</a>
+<a class="text-white/40 hover:text-yellow-400 transition-colors" href="#">Press Kit</a>
+<a class="text-white/40 hover:text-yellow-400 transition-colors" href="#">Contact Us</a>
+</div>
+</footer>
+<script defer src="../assets/site.js"></script>
+</body></html>

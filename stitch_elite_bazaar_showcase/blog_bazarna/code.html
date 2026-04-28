@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog | BAZARNA</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800;900&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary": "#00391e",
+                        "on-tertiary": "#2f3131",
+                        "secondary-container": "#fed000",
+                        "secondary-fixed-dim": "#edc200",
+                        "primary": "#7ed9a0",
+                        "primary-fixed": "#9af6ba",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-bright": "#3a3939",
+                        "inverse-on-surface": "#313030",
+                        "outline-variant": "#3f4941",
+                        "surface-container": "#201f1f",
+                        "inverse-primary": "#006d3f",
+                        "tertiary": "#c6c6c7",
+                        "outline": "#889489",
+                        "on-secondary-container": "#6f5900",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#95f0b5",
+                        "tertiary-container": "#606161",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "surface": "#131313",
+                        "primary-container": "#007041",
+                        "on-tertiary-container": "#dcdddd",
+                        "on-secondary": "#3c2f00",
+                        "secondary": "#fff0c9",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary-fixed": "#ffe07f",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-surface-variant": "#bec9be",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "background": "#131313",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#7ed9a0",
+                        "on-primary-fixed-variant": "#00522e",
+                        "on-secondary-fixed": "#231b00",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-tint": "#7ed9a0",
+                        "on-background": "#e5e2e1",
+                        "on-primary-fixed": "#00210f",
+                        "surface-dim": "#131313",
+                        "on-secondary-fixed-variant": "#564500",
+                        "surface-variant": "#353534",
+                        "surface-container-highest": "#353534",
+                        "error-container": "#93000a",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-error": "#690005",
+                        "tertiary-fixed-dim": "#c6c6c7"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "section-gap": "120px",
+                        "unit": "8px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "display-xl": ["Epilogue"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Epilogue"],
+                        "headline-md": ["Epilogue"],
+                        "body-sm": ["Inter"],
+                        "label-caps": ["Space Grotesk"]
+                    },
+                    fontSize: {
+                        "display-xl": ["80px", { "lineHeight": "90%", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "160%", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "110%", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "120%", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "150%", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "100%", "letterSpacing": "0.1em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #131313; color: #e5e2e1; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col pt-32">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-[#111111]/80 backdrop-blur-lg relative">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-[1440px] mx-auto">
+<!-- Brand Logo -->
+<a class="text-2xl font-black tracking-tighter text-white uppercase font-['Epilogue']" href="../home_bazarna_pop_up_society/code.html">
+                BAZARNA
+            </a>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white cursor-pointer active:scale-95 transition-transform hover:bg-yellow-400 hover:text-black transition-colors duration-200" href="../events_brands_bazarna/code.html">Events</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white cursor-pointer active:scale-95 transition-transform hover:bg-yellow-400 hover:text-black transition-colors duration-200" href="../marketplace_bazarna/code.html">Marketplace</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white cursor-pointer active:scale-95 transition-transform hover:bg-yellow-400 hover:text-black transition-colors duration-200" href="../media_stories_bazarna/code.html">Gallery</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-yellow-400 border-b-2 border-yellow-400 pb-1 cursor-pointer active:scale-95 transition-transform hover:bg-yellow-400 hover:text-black transition-colors duration-200" href="../blog_bazarna/code.html">Blog</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white cursor-pointer active:scale-95 transition-transform hover:bg-yellow-400 hover:text-black transition-colors duration-200" href="../sponsors_mission_bazarna/code.html">Sponsors</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-white" data-mobile-menu-button type="button">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+<div class="md:hidden hidden absolute top-full left-0 w-full bg-[#111111]/95 backdrop-blur-lg border-b border-white/10" data-mobile-menu id="mobile-menu">
+<div class="w-full max-w-[1440px] mx-auto px-8 py-4 flex flex-col gap-1">
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../events_brands_bazarna/code.html">Events</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../marketplace_bazarna/code.html">Marketplace</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../media_stories_bazarna/code.html">Gallery</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-yellow-400 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../blog_bazarna/code.html">Blog</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../sponsors_mission_bazarna/code.html">Sponsors</a>
+</div>
+</div>
+</nav>
+
+<main class="flex-grow flex flex-col w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<!-- Hero -->
+<section class="mb-16 mt-12 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+<div class="lg:col-span-7 flex flex-col gap-6">
+<h1 class="font-display-xl text-display-xl text-on-background uppercase break-words">
+                    The <br/>
+<span class="text-secondary-container">Signal</span> <br/>
+                    Desk
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Editorial drops, behind-the-scenes, and the stories that shape the modern bazaar.
+                </p>
+</div>
+<div class="lg:col-span-5 relative h-[360px] lg:h-[460px] bg-surface-container mt-8 lg:mt-0 overflow-hidden">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-70" data-alt="high contrast editorial desk scene"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-center justify-between">
+<span class="bg-surface/70 backdrop-blur px-3 py-2 border border-white/10 font-label-caps text-label-caps text-on-surface uppercase">Updated monthly</span>
+<span class="bg-secondary-container px-4 py-2 font-label-caps text-label-caps text-on-secondary uppercase flex items-center gap-2">
+                        Read <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+                    </span>
+</div>
+</div>
+</section>
+
+<!-- Posts -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-8 flex flex-col gap-8">
+<article class="bg-surface-container border border-white/5 hover:border-secondary-container transition-colors group">
+<div class="p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-caps text-label-caps text-secondary-container uppercase">Feature</span>
+<div class="w-8 h-[1px] bg-outline-variant"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">4 Min Read</span>
+</div>
+<h2 class="font-headline-lg text-[42px] text-on-surface uppercase leading-tight mb-3 group-hover:text-secondary-container transition-colors">Designing Flow: The Pop-Up Blueprint</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">A practical look at layout choices that keep movement smooth and discovery effortless.</p>
+<div class="mt-8 flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Sep 28, 2023</span>
+<button class="border border-white/20 text-on-surface px-5 py-2 font-label-caps text-label-caps uppercase hover:border-secondary-container hover:text-secondary-container transition-colors">Open</button>
+</div>
+</div>
+</article>
+
+<article class="bg-surface-container border border-white/5 hover:border-secondary-container transition-colors group">
+<div class="p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-caps text-label-caps text-primary uppercase">Interview</span>
+<div class="w-8 h-[1px] bg-outline-variant"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">6 Min Read</span>
+</div>
+<h3 class="font-headline-md text-[30px] text-on-surface uppercase leading-tight mb-3 group-hover:text-secondary-container transition-colors">Curation Rules That Protect Quality</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">How we keep the standard high without adding friction for vendors or visitors.</p>
+<div class="mt-6 flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Aug 10, 2023</span>
+<button class="border border-white/20 text-on-surface px-5 py-2 font-label-caps text-label-caps uppercase hover:border-secondary-container hover:text-secondary-container transition-colors">Open</button>
+</div>
+</div>
+</article>
+
+<article class="bg-surface-container border border-white/5 hover:border-secondary-container transition-colors group">
+<div class="p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-caps text-label-caps text-secondary-container uppercase">Guide</span>
+<div class="w-8 h-[1px] bg-outline-variant"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">3 Min Read</span>
+</div>
+<h3 class="font-headline-md text-[30px] text-on-surface uppercase leading-tight mb-3 group-hover:text-secondary-container transition-colors">First-Time Visitor Checklist</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">What to bring, how to plan your route, and how to catch limited drops.</p>
+<div class="mt-6 flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Jul 02, 2023</span>
+<button class="border border-white/20 text-on-surface px-5 py-2 font-label-caps text-label-caps uppercase hover:border-secondary-container hover:text-secondary-container transition-colors">Open</button>
+</div>
+</div>
+</article>
+</div>
+
+<aside class="lg:col-span-4 h-fit lg:sticky top-32">
+<div class="bg-surface-container-lowest border border-white/10 p-8">
+<h4 class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-4">Categories</h4>
+<div class="flex flex-col gap-3">
+<button class="text-left border border-outline-variant text-on-surface px-5 py-3 font-label-caps text-label-caps uppercase hover:border-secondary-container hover:text-secondary-container transition-colors">Culture</button>
+<button class="text-left border border-outline-variant text-on-surface px-5 py-3 font-label-caps text-label-caps uppercase hover:border-secondary-container hover:text-secondary-container transition-colors">Brands</button>
+<button class="text-left border border-outline-variant text-on-surface px-5 py-3 font-label-caps text-label-caps uppercase hover:border-secondary-container hover:text-secondary-container transition-colors">Events</button>
+<button class="text-left border border-outline-variant text-on-surface px-5 py-3 font-label-caps text-label-caps uppercase hover:border-secondary-container hover:text-secondary-container transition-colors">Design</button>
+</div>
+</div>
+</aside>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#111111] w-full py-12 px-8 border-t border-white/5 hairline weight horizontal lines flat">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div>
+<div class="text-xl font-black text-white mb-4">BAZARNA</div>
+<p class="text-white/40 font-['Epilogue'] text-xs tracking-widest uppercase">© 2024 BAZARNA SOCIETY. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-8 md:justify-end items-start">
+<a class="font-['Epilogue'] text-xs tracking-widest uppercase text-white/40 hover:text-yellow-400 transition-colors ease-in-out duration-300" href="#">Privacy Policy</a>
+<a class="font-['Epilogue'] text-xs tracking-widest uppercase text-white/40 hover:text-yellow-400 transition-colors ease-in-out duration-300" href="#">Terms of Service</a>
+<a class="font-['Epilogue'] text-xs tracking-widest uppercase text-white/40 hover:text-yellow-400 transition-colors ease-in-out duration-300" href="#">Press Kit</a>
+<a class="font-['Epilogue'] text-xs tracking-widest uppercase text-white/40 hover:text-yellow-400 transition-colors ease-in-out duration-300" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+<script defer src="../assets/site.js"></script>
+</body></html>

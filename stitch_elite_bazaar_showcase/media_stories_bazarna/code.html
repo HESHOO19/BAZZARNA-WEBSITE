@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bazarna - Gallery &amp; Blog</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800;900&amp;family=Inter:wght@400&amp;family=Space+Grotesk:wght@700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#00391e",
+                        "on-tertiary": "#2f3131",
+                        "secondary-container": "#fed000",
+                        "secondary-fixed-dim": "#edc200",
+                        "primary": "#7ed9a0",
+                        "primary-fixed": "#9af6ba",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-bright": "#3a3939",
+                        "inverse-on-surface": "#313030",
+                        "outline-variant": "#3f4941",
+                        "surface-container": "#201f1f",
+                        "inverse-primary": "#006d3f",
+                        "tertiary": "#c6c6c7",
+                        "outline": "#889489",
+                        "on-secondary-container": "#6f5900",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#95f0b5",
+                        "tertiary-container": "#606161",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "surface": "#131313",
+                        "primary-container": "#007041",
+                        "on-tertiary-container": "#dcdddd",
+                        "on-secondary": "#3c2f00",
+                        "secondary": "#fff0c9",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary-fixed": "#ffe07f",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-surface-variant": "#bec9be",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "background": "#131313",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#7ed9a0",
+                        "on-primary-fixed-variant": "#00522e",
+                        "on-secondary-fixed": "#231b00",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-tint": "#7ed9a0",
+                        "on-background": "#e5e2e1",
+                        "on-primary-fixed": "#00210f",
+                        "surface-dim": "#131313",
+                        "on-secondary-fixed-variant": "#564500",
+                        "surface-variant": "#353534",
+                        "surface-container-highest": "#353534",
+                        "error-container": "#93000a",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-error": "#690005",
+                        "tertiary-fixed-dim": "#c6c6c7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "section-gap": "120px",
+                        "unit": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Epilogue"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Epilogue"],
+                        "headline-md": ["Epilogue"],
+                        "body-sm": ["Inter"],
+                        "label-caps": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["80px", { "lineHeight": "90%", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "160%", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "110%", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "120%", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "150%", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "100%", "letterSpacing": "0.1em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-lg antialiased overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="bg-[#111111]/80 backdrop-blur-lg fixed top-0 w-full z-50 border-b border-white/10 flat no shadows relative">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-[1440px] mx-auto">
+<a class="text-2xl font-black tracking-tighter text-white" href="../home_bazarna_pop_up_society/code.html">BAZARNA</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white cursor-pointer active:scale-95 transition-transform ease-in-out duration-300" href="../events_brands_bazarna/code.html">Events</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white cursor-pointer active:scale-95 transition-transform ease-in-out duration-300" href="../marketplace_bazarna/code.html">Marketplace</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-yellow-400 border-b-2 border-yellow-400 pb-1 cursor-pointer active:scale-95 transition-transform ease-in-out duration-300" href="../media_stories_bazarna/code.html">Gallery</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white cursor-pointer active:scale-95 transition-transform ease-in-out duration-300" href="../blog_bazarna/code.html">Blog</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/70 hover:text-white cursor-pointer active:scale-95 transition-transform ease-in-out duration-300" href="../sponsors_mission_bazarna/code.html">Sponsors</a>
+</nav>
+<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-white" data-mobile-menu-button type="button">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+<div class="md:hidden hidden absolute top-full left-0 w-full bg-[#111111]/95 backdrop-blur-lg border-b border-white/10" data-mobile-menu id="mobile-menu">
+<div class="w-full max-w-[1440px] mx-auto px-8 py-4 flex flex-col gap-1">
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../events_brands_bazarna/code.html">Events</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../marketplace_bazarna/code.html">Marketplace</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-yellow-400 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../media_stories_bazarna/code.html">Gallery</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../blog_bazarna/code.html">Blog</a>
+<a class="font-['Epilogue'] font-bold uppercase tracking-widest text-sm text-white/80 hover:text-black hover:bg-yellow-400 transition-colors duration-200 px-3 py-3" href="../sponsors_mission_bazarna/code.html">Sponsors</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative pt-40 pb-24 px-margin-mobile md:px-margin-desktop w-full max-w-[1440px] mx-auto flex flex-col items-start min-h-[614px] justify-end">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10"></div>
+<img alt="massive crowd at an energetic indoor pop-up bazaar event with dramatic atmospheric lighting and neon signs" class="w-full h-full object-cover object-center grayscale mix-blend-overlay opacity-40" data-alt="massive crowd at an energetic indoor pop-up bazaar event with dramatic atmospheric lighting and neon signs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABtIK4T3P43jukugkBxKTEi6hOvysMwfSCBy7zMMFxtaLVZzfEyftTdgsICDhmilzCHSZgT16ridRPNTQrmOVNRmA64HBXtw6_dB5Y_0g1XeI8B6Js0M42H1PptjB1bi6bO07qK5Poy13bMci-LX0qhFCmAsfGLnJiucQ5BSPrAaHQQWihOW1TMwY0b6-ogfnSsx5Cqi3OPTfLLGrc2fT30lptas8W79IciINZoTSrHWOH4MzSmqDVM_oq-HCCIGIZdsupiP93o_ig"/>
+</div>
+<div class="relative z-10 w-full max-w-4xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high border border-outline-variant mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Archive &amp; Editorial</span>
+</div>
+<h1 class="font-display-xl text-display-xl text-on-background uppercase mb-6 drop-shadow-2xl">
+                The Culture <br/><span class="text-secondary-container">&amp;</span> The Captures
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-2 border-secondary-container pl-6">
+                Immerse yourself in the raw energy of Bazarna. High-fidelity moments from our latest pop-up marketplaces, exclusive sponsor highlights, and the stories that define the modern bazaar subculture.
+            </p>
+</div>
+</section>
+<!-- Bento Gallery Section -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="flex justify-between items-end mb-12 border-b border-surface-container-high pb-4">
+<h2 class="font-headline-lg text-headline-lg uppercase">Visual Archive</h2>
+<button class="font-label-caps text-label-caps text-on-surface uppercase hover:text-secondary-container transition-colors flex items-center gap-2">
+                View All Media <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[300px]">
+<!-- Gallery Item 1: Large Feature -->
+<div class="md:col-span-8 md:row-span-2 relative group cursor-pointer overflow-hidden bg-surface-container">
+<img alt="close-up of hands exchanging artisan goods at a dimly lit vibrant market stall with bokeh background" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close-up of hands exchanging artisan goods at a dimly lit vibrant market stall with bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvdRzd7GsBBkBiR3vzIuGgFfac2aFG6IzkVFrDJ-iuRNwWcd3D41n-zG_KOwx_8SFGzTnXuGzGMCdfBpaim7l2EY42fliJ4Ah__oL1VaTVKGKpLarDxeYlG6DtkJcEhX7Hjmteq7bllhO4I0UUAm2WIJhRkXfZxoyEzO0dMVqVY4gdJ4HWFkQlnE_Uh2PlV--ZLVT6FpxG7pn1pJZT4yLgKA8Wa1NJGT0Tz2LxY5sxMW_eSNBT78ViBmUSbLw0yQugg4RFexa8Z4y4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<div class="flex gap-2 mb-3">
+<span class="font-label-caps text-label-caps bg-primary-container text-on-primary-container px-2 py-1 uppercase">Sponsor Highlight</span>
+<span class="font-label-caps text-label-caps bg-surface text-on-surface px-2 py-1 border border-outline-variant uppercase">Video</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white uppercase mb-2">The Night Market Experience</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                        A raw look into the energy of our latest nocturnal marketplace featuring over 50 independent creators.
+                    </p>
+</div>
+<!-- Play Icon Overlay -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-secondary-container/90 rounded-full flex items-center justify-center scale-90 group-hover:scale-100 transition-transform duration-300">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Gallery Item 2: Tall Portrait -->
+<div class="md:col-span-4 md:row-span-2 relative group cursor-pointer overflow-hidden bg-surface-container">
+<img alt="dynamic low angle shot of a live music performance at an event with dramatic blue and pink stage lighting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="dynamic low angle shot of a live music performance at an event with dramatic blue and pink stage lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnTt_PkirtHWKs11RAFQ2JhDDqvv8Jucl2sPCcp6qIjyTQI_2KlSy70UlIsQi_potRXwpu-_j52WNx3WCmjw5srYeQ6OnIu0VPMuLMnGA_lXZ8ccdQI2ipfcQzJRyu8m5T8wPf33I4B_kof09__mTlebedmigtfeJHAG9bNP4_e_9Zg9CdbpFxdV1MLD0A7ceGIagVH0iPG1ysM5803nj10TN8NSuQLgBgMXKqJe4gKTvtd_2INvktdVsPVcKXO5DCyBCHY8hJRMIT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="font-label-caps text-label-caps bg-surface-bright text-on-surface px-2 py-1 border border-outline-variant uppercase mb-3 inline-block">Live Acts</span>
+<h3 class="font-headline-md text-[24px] font-bold text-white uppercase leading-tight">Mainstage <br/>Energy Vol. 2</h3>
+</div>
+</div>
+<!-- Gallery Item 3: Standard Square -->
+<div class="md:col-span-4 md:row-span-1 relative group cursor-pointer overflow-hidden bg-surface-container">
+<img alt="overhead shot of a curated selection of vintage streetwear clothing laid out on a dark textured surface" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0" data-alt="overhead shot of a curated selection of vintage streetwear clothing laid out on a dark textured surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4L89I-itWRMLs2zlBbZij5xrUC4WiwzxM9fTDImeUkCaS93tNPX5IpcsmFsLAm-4-j2t0NCANj9p4CwCwLJkSiwdL6RRsm3JONlI7FN_GAZIgkvZ6bjGRTG0Rlf-3ZBK9GGcHcaBZTfsEP6524cBl8QvWx-tsZHjK1AFvtcvODXbLqfsZCK2nTvdb7JAbIURFnQSSU5HGlSbEj8DXRmsLQ7k33WIeFokGZ1EM7ymGYn61CIIfOXPbIpXsEaTD49Mz9xbD1n42qNyq"/>
+<div class="absolute inset-0 bg-[#111111]/40 group-hover:bg-transparent transition-colors duration-300"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm bg-[#111111]/60">
+<span class="font-label-caps text-label-caps text-secondary-container uppercase tracking-widest border border-secondary-container px-4 py-2">View Brand</span>
+</div>
+</div>
+<!-- Gallery Item 4: Standard Square -->
+<div class="md:col-span-4 md:row-span-1 relative group cursor-pointer overflow-hidden bg-surface-container">
+<img alt="close up of neon signage glowing warmly against a dark brick wall in an urban setting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close up of neon signage glowing warmly against a dark brick wall in an urban setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqB6gcFQkT615qvpuMteOPUXehhAvkEeyhVJYp8k-67m_aWsA5kz06ICo7Cz3HVo0AlkjU8ZpwCngKk5beI71KPCzwzVk5sJiephGvFHIv9pl4r3dgDitDdzU_mPrhyMKw1JyKcPWZS_D1s3-nCp9h3it5-kYJ8mAQjho0HSxh4llkMgeXKuZSmkE8VXhbiKkqpSTTQ20vzzQKXO2_UPcykknH8iWJ6G8rylEXNgJjGG5TtM2xgyYWb_U4Sj3hkTBPWuk9J9FExCKt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1 block">Atmosphere</span>
+<h3 class="font-headline-md text-[20px] font-bold text-white uppercase">Neon Nights</h3>
+</div>
+</div>
+<!-- Gallery Item 5: Standard Square -->
+<div class="md:col-span-4 md:row-span-1 relative group cursor-pointer overflow-hidden bg-surface-container flex items-center justify-center border-2 border-dashed border-outline-variant hover:border-secondary-container hover:bg-surface-container-high transition-colors">
+<div class="text-center p-6">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-2" style="font-variation-settings: 'FILL' 0;">photo_library</span>
+<h3 class="font-headline-md text-[20px] font-bold text-on-surface uppercase mb-1">Full Gallery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Explore 500+ captured moments</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog / Editorial Section -->
+<section class="bg-surface-container-lowest w-full py-section-gap border-t border-outline-variant">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg uppercase mb-4">Editorial Dispatches</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Deep dives into the brands, creators, and subcultures that make up the Bazarna ecosystem. Read the latest stories from the floor.</p>
+</div>
+<button class="px-6 py-3 border border-outline-variant hover:border-white transition-colors font-label-caps text-label-caps uppercase text-on-surface tracking-widest bg-transparent">
+                    All Articles
+                </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-gutter">
+<!-- Blog Card 1 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/3] mb-6 bg-surface-container">
+<img alt="a trendy fashion boutique interior with neatly organized clothing racks and industrial aesthetic" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="a trendy fashion boutique interior with neatly organized clothing racks and industrial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGdo9dEo6DSkBrejKACqBnWmHpk50xYTrGVt3036yzUIdDz8uo2fUctyqE9xKe0FRDWNj9vdFXzVySQChmhCz0WylM-nqDBTo9NEUTburHvUUW5VJxSkWleoWHvuQdvfoTMcMKOxRAye9Se1e0qAANm7uIYG9lzlxijMD36Yr7USjzl7_V_7hL0KrTw1RjJHVHqk-nHHM1rlw6Z5nMz5l9Ra0lBLQl0HIHP_peiTZB8DVeDIh71V274fAtUt21CTySd5i9ZE0N5VKC"/>
+<div class="absolute top-4 left-4">
+<span class="font-label-caps text-label-caps bg-primary-container text-on-primary-container px-3 py-1.5 uppercase shadow-lg">Brand Story</span>
+</div>
+</div>
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-caps text-label-caps text-secondary-container uppercase">Oct 12, 2023</span>
+<div class="w-8 h-[1px] bg-outline-variant"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">3 Min Read</span>
+</div>
+<h3 class="font-headline-md text-[28px] font-bold text-on-surface uppercase leading-tight mb-3 group-hover:text-secondary-container transition-colors">The Rise of Archival Fashion in Local Markets</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                        How independent curators are reshaping the way we consume vintage clothing, prioritizing storytelling and garment history over fast trends.
+                    </p>
+</article>
+<!-- Blog Card 2 -->
+<article class="group cursor-pointer md:-translate-y-8">
+<div class="relative overflow-hidden aspect-[4/3] mb-6 bg-surface-container">
+<img alt="close up of a chef plating gourmet street food in a busy food stall setting with warm lighting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close up of a chef plating gourmet street food in a busy food stall setting with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkhcagsulCzxs6f7xZBWSq5NYrfXPbI61aB4p36repQNpkC2BcBYY88nLggK-hmz24-R60dWVzQ4-xRIWFFxRY23D_N5aFVYuscbd_Z3M5uILRDD61UhgCkwBlCXkX4ei4kXVqwIQOG_EcB0Tbvv_vnxU1VD0iCo62A10yYL6TgDrLkXv5CuK6OwebfYsnhNzg9cuJWOG4d5F2PjmiWqeELwCgmedKGEC6YDvu5xRz0dgrdreSAamN2d4wHV-Mj3POotZfHxFkS_gf"/>
+<div class="absolute top-4 left-4">
+<span class="font-label-caps text-label-caps bg-surface-bright text-on-surface border border-outline-variant px-3 py-1.5 uppercase shadow-lg">Tastemakers</span>
+</div>
+</div>
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-caps text-label-caps text-secondary-container uppercase">Oct 08, 2023</span>
+<div class="w-8 h-[1px] bg-outline-variant"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">5 Min Read</span>
+</div>
+<h3 class="font-headline-md text-[28px] font-bold text-on-surface uppercase leading-tight mb-3 group-hover:text-secondary-container transition-colors">Culinary Innovators: The Food Vendors of Vol. 4</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                        Meet the chefs who are elevating street food. From fusion tacos to artisanal pastries, we explore the flavors that defined our last event.
+                    </p>
+</article>
+<!-- Blog Card 3 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/3] mb-6 bg-surface-container">
+<img alt="wide shot of a beautifully designed architectural pavilion structure at an outdoor event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale" data-alt="wide shot of a beautifully designed architectural pavilion structure at an outdoor event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5PQctQHoGtLxVJPJjbDFfftUd0VdQoc6R4SCGmJ5orALJgta2oo8rFpuREVdTUgtU0IUtil_fHS4rkvwNRAPm2QMN9NXV9tpihgw8wezHSXFnCK3GWlOv93VWGen-LmOsVs3zNra4xu-B6LaPkWiTaywtE9HO4VwuBgMwz6GMBpNBoyc_CsdK-g3ZVCupJOb95JaQuz7g9BxZf0PaXzWg_rD-gAdGRZMzjxzRbNsLfEvZlp9Ax02p256AiRqmpq5ZoKK655w2xCSr"/>
+<div class="absolute top-4 left-4">
+<span class="font-label-caps text-label-caps bg-white text-black px-3 py-1.5 uppercase shadow-lg">Event Highlights</span>
+</div>
+</div>
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-caps text-label-caps text-secondary-container uppercase">Sep 28, 2023</span>
+<div class="w-8 h-[1px] bg-outline-variant"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">4 Min Read</span>
+</div>
+<h3 class="font-headline-md text-[28px] font-bold text-on-surface uppercase leading-tight mb-3 group-hover:text-secondary-container transition-colors">Spatial Design: Building the Bazarna Experience</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                        An interview with our lead architect on designing a pop-up layout that encourages exploration, interaction, and fluid crowd movement.
+                    </p>
+</article>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#111111] w-full py-12 px-8 border-t border-white/5 hairline weight horizontal lines flat">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-black text-white mb-4">
+                    BAZARNA
+                </div>
+<p class="font-['Epilogue'] text-xs tracking-widest uppercase text-white/40">
+                    © 2024 BAZARNA SOCIETY. ALL RIGHTS RESERVED.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-8 md:justify-end items-start">
+<a class="font-['Epilogue'] text-xs tracking-widest uppercase text-white/40 hover:text-white hover:text-yellow-400 transition-colors ease-in-out duration-300" href="#">Privacy Policy</a>
+<a class="font-['Epilogue'] text-xs tracking-widest uppercase text-white/40 hover:text-white hover:text-yellow-400 transition-colors ease-in-out duration-300" href="#">Terms of Service</a>
+<a class="font-['Epilogue'] text-xs tracking-widest uppercase text-white/40 hover:text-white hover:text-yellow-400 transition-colors ease-in-out duration-300" href="#">Press Kit</a>
+<a class="font-['Epilogue'] text-xs tracking-widest uppercase text-white/40 hover:text-white hover:text-yellow-400 transition-colors ease-in-out duration-300" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</main>
+<script defer src="../assets/site.js"></script>
+</body></html>
