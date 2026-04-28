@@ -2,18 +2,41 @@ import { AuthPanel } from "@/components/forms/auth-panel";
 
 export default function SignInPage() {
   return (
-    <main className="section-shell py-16">
-      <div className="grid gap-10 lg:grid-cols-[0.85fr_0.85fr]">
-        <div className="rounded-[2rem] border border-border bg-panel p-8">
-          <p className="text-sm uppercase tracking-[0.2em] text-primary">Authentication</p>
-          <h1 className="mt-4 text-5xl font-black uppercase leading-none text-text">Email and Google sign-in.</h1>
-          <p className="mt-5 text-lg leading-8 text-slate-200">
-            Accounts are managed through Supabase Auth with a welcome email trigger, dashboard access, and role-aware permissions once the user is assigned.
-          </p>
+    <main className="relative min-h-[calc(100vh-80px)] overflow-hidden">
+      {/* Background glow */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute left-1/2 top-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primary/8 blur-[120px]" />
+      </div>
+
+      <div className="section-shell relative z-10 flex min-h-[calc(100vh-80px)] items-center py-16">
+        <div className="grid w-full gap-12 lg:grid-cols-[1fr_480px] lg:items-center">
+          {/* Left: copy */}
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">Authentication</p>
+            <h1 className="mt-4 text-6xl font-black uppercase leading-none text-text">
+              Sign in to<br />BAZZARNA.
+            </h1>
+            <p className="mt-5 max-w-md text-lg leading-8 text-muted">
+              Accounts are managed through Supabase Auth with role-based permissions, welcome emails, and dashboard access once your role is assigned.
+            </p>
+            <div className="mt-8 flex flex-col gap-3">
+              {[
+                "Role-based access control",
+                "Google OAuth or email + password",
+                "Welcome email on signup",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3 text-sm text-muted">
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary text-xs">✓</span>
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right: auth panel */}
+          <AuthPanel />
         </div>
-        <AuthPanel />
       </div>
     </main>
   );
 }
-
