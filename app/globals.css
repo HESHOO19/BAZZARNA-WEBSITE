@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-text antialiased;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  @apply transition-colors duration-200;
+}
+
+.section-shell {
+  @apply mx-auto max-w-7xl px-6;
+}
+
